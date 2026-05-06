@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+aiosqlite
+alembic
+pydantic[email]
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+sentence-transformers
+pytest
+pytest-asyncio
+httpx
+python-dotenv
+scikit-learn
+numpy
+google-generativeai
