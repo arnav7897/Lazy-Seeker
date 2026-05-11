@@ -119,6 +119,19 @@ Everything else is automated.
 
 ---
 
+## Overall System Architecture
+
+```mermaid
+flowchart TD
+    A[Chrome Extension] --> B[Backend API]
+    B --> C[(Database)]
+    B --> D[Semantic Cache]
+    B --> E[Ollama]
+    B --> F[Gemini]
+    A --> G[Job Site Forms]
+    B --> H[Google Drive]
+```
+
 # 4. System Flow
 
 ## Onboarding Flow
@@ -499,18 +512,6 @@ pytest backend/tests/ -v --asyncio-mode=auto
 
 # 16. Mermaid Diagrams
 
-## Overall System Architecture
-
-```mermaid
-flowchart TD
-    A[Chrome Extension] --> B[Backend API]
-    B --> C[(Database)]
-    B --> D[Semantic Cache]
-    B --> E[Ollama]
-    B --> F[Gemini]
-    A --> G[Job Site Forms]
-    B --> H[Google Drive]
-```
 
 ## AI Answer Pipeline
 
